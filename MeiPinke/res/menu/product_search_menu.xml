@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_wish"
+        android:icon="@drawable/favorite_love"
+        android:orderInCategory="2"      
+        android:showAsAction="always"       
+        />
+    
+    <item
+        android:id="@+id/menu_cart"
+        android:icon="@drawable/shopping_cart_empty"
+        android:orderInCategory="3"
+        android:showAsAction="always"       
+        />
+    
+    <item
+        android:id="@+id/action_searchview"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="1"
+        android:title="@string/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="always|collapseActionView"/>
+    
+
+
+</menu>

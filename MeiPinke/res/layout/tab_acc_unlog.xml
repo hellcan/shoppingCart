@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+  <TextView 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:text="You Need Log In First! "
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/brown"
+            android:textStyle="bold"/>
+  
+  <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/grey"/>
+  
+    <RelativeLayout
+        android:id="@+id/login_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10.0px"
+        android:paddingTop="21.0px" >
+        
+        <EditText
+            android:id="@+id/acc_edt_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/edit_selector_login"
+            android:hint="@string/input_account_hint"
+            android:inputType="textEmailAddress"
+            android:maxLength="16"
+            android:paddingLeft="10.0sp"
+            android:saveEnabled="true" />
+
+        <EditText
+            android:id="@+id/acc_edt_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/acc_edt_account"
+            android:layout_alignRight="@+id/acc_edt_account"
+            android:layout_below="@+id/acc_edt_account"
+            android:layout_marginRight="1.0dip"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_selector_login"
+            android:hint="@string/input_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="10.0sp"
+            android:saveEnabled="true" />
+
+        <Button
+            android:id="@+id/acc_btn_signin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/acc_edt_pwd"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selector_signin"
+            android:textColor="@color/white"
+            android:text="@string/sign_in" />
+
+        <TextView
+            android:id="@+id/acc_tv_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acc_btn_signin"
+            android:layout_centerHorizontal="true"
+            android:text="OR"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/acc_btn_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/acc_tv_or"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/button_selector_createaccount"
+            android:text="@string/register" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:background="@drawable/login_input"
+    >
+
+
+<LinearLayout  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    
+    >
+           
+       <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/tv_watch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whatches"
+                    android:layout_centerInParent="true"
+                    android:textSize="13sp"
+                    android:padding="3dp"
+                    android:textStyle="italic"
+                     />
+                
+                
+           </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_beauty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beauty"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:padding="3dp"
+                    android:textStyle="italic"
+                     />
+           </RelativeLayout>
+                
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/tv_handbags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/handbags"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                     />
+            </RelativeLayout>
+                
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/phone"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:padding="3dp"
+                    android:textStyle="italic"
+                     />
+            </RelativeLayout>
+   </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false" >
+
+             <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                 >
+
+                <TextView
+                    android:id="@+id/tv_sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/sports"
+                    android:textSize="13sp"
+                    android:textStyle="italic" />
+
+                </RelativeLayout>
+         </LinearLayout>
+   </LinearLayout>
+</RelativeLayout>

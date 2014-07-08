@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/unlogin_item_subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtotal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/unlogin_item_subtotal_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/unlogin_item_subtotal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="@string/cart_price"
+        android:textColor="@color/orangered"
+        android:textSize="30sp" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/unlogin_item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_info"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp" />
+    
+    <Button
+        android:id="@+id/unlogin_item_checkout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_selector_signin"
+        android:padding="10dp"
+        android:text="@string/checkout"
+        android:textSize="25sp"
+        android:textColor="@color/white" />
+    
+        <TextView 
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey"/>   
+         
+        <ListView
+            android:id="@+id/unlogin_item_listview"
+            android:layout_width="match_parent"
+            android:dividerHeight="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#FFFFFF"
+             />
+
+        <TextView 
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_5"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+    
+        <Button
+        android:id="@+id/unlgoin_item_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/button_selector_cart_signin"
+        android:padding="10dp"
+        android:text="@string/sign_in"
+        android:textSize="25sp"
+        android:textColor="@color/white" 
+        android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/unlogin_item_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_createaccount"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:text="@string/editcart"
+            android:textSize="25sp" />
+
+         </LinearLayout>
+        <TextView 
+        android:id="@+id/line_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_5"/>
+
+</LinearLayout>
+</ScrollView>

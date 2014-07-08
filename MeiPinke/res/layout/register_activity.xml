@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_account_hint"
+        android:layout_marginTop="10dp" 
+        android:layout_marginLeft="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+            android:id="@+id/reg_edt_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/edit_selector_login"
+            android:paddingLeft="10.0sp"
+            android:maxLength="16"
+            android:inputType="textEmailAddress"
+            android:saveEnabled="true" />
+    
+    <TextView
+        android:id="@+id/reg_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_password_hint"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+            android:id="@+id/reg_edt_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/edit_selector_login"
+            android:paddingLeft="10.0sp"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:saveEnabled="true" />
+    
+    <TextView
+        android:id="@+id/reg_conf_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmpassword"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+            android:id="@+id/reg_edt_conf_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/edit_selector_login"
+            android:paddingLeft="10.0sp"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:saveEnabled="true" />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_4"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+    <TextView 
+        android:id="@+id/reg_firstname" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/firstname" 
+        android:layout_marginLeft="15dp" 
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textSize="17sp" />
+    
+    <EditText
+        android:id="@+id/reg_edt_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5.0px"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/edit_selector_login"
+        android:inputType="text"
+        android:maxLength="16"
+        android:paddingLeft="10.0sp"
+        android:saveEnabled="true"
+        android:layout_weight="1" />
+    </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+    <TextView 
+        android:id="@+id/reg_lastname" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/lastname" 
+        android:layout_marginLeft="15dp" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText 
+        android:id="@+id/reg_edt_lastname" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="5.0px" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:layout_marginTop="5.0dip" 
+        android:background="@drawable/edit_selector_login" 
+        android:paddingLeft="10.0sp" 
+        android:inputType="text" 
+        android:maxLength="16" 
+        android:saveEnabled="true" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <TextView 
+        android:id="@+id/reg_address" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/address" 
+        android:layout_marginLeft="15dp" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText 
+        android:id="@+id/reg_edt_address" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="5.0px" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:layout_marginTop="5.0dip" 
+        android:background="@drawable/edit_selector_login" 
+        android:paddingLeft="10.0sp" 
+        android:inputType="text" 
+        android:maxLength="16" 
+        android:saveEnabled="true" />
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:baselineAligned="false">
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+    <TextView 
+        android:id="@+id/reg_city" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/city" 
+        android:layout_marginLeft="15dp" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText
+        android:id="@+id/reg_edt_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0px"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/edit_selector_login"
+        android:inputType="text"
+        android:maxLength="16"
+        android:paddingLeft="10.0sp"
+        android:saveEnabled="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+    <TextView 
+        android:id="@+id/reg_state" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/state" 
+        android:layout_marginLeft="15dp" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText 
+        android:id="@+id/reg_edt_state" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="5.0px" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:layout_marginTop="5.0dip" 
+        android:background="@drawable/edit_selector_login" 
+        android:paddingLeft="10.0sp" 
+        android:inputType="text" 
+        android:maxLength="16" 
+        android:saveEnabled="true" />
+    </LinearLayout>
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/reg_zip" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/zip" 
+        android:layout_marginLeft="15dp" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText 
+        android:id="@+id/reg_edt_zip" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="5.0px" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:layout_marginTop="5.0dip" 
+        android:background="@drawable/edit_selector_login" 
+        android:paddingLeft="10.0sp" 
+        android:inputType="number" 
+        android:maxLength="16" 
+        android:saveEnabled="true" />
+    
+    <Button 
+        android:id="@+id/reg_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Create My Account"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_selector_createaccount"/>
+    
+    <Button 
+        android:id="@+id/reg_btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_selector_signin"
+        android:textColor="@color/white"
+        android:text="Continue"/>
+
+</LinearLayout>
+</ScrollView>

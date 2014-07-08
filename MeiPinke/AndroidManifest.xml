@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meipinke"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.meipinke.entry.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.meipinke.entry.MainActivity"
+            android:label="@string/app_name">           
+        </activity>
+        
+        <activity android:name="com.meipinke.entry.TabHomeActivity"/>
+        <activity android:name="com.meipinke.entry.TabCustServiceActivity"/>
+        <activity android:name="com.meipinke.entry.TabExtrasActivity"/>
+        <activity android:name="com.meipinke.entry.TabInfoActivity"/>
+        <activity android:name="com.meipinke.entry.TabAccActivity"/>
+        <activity android:name="com.meipinke.products.ProductsMainActivity"/>
+        <activity 
+            android:name="com.meipinke.products.ProductsDetailActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.meipinke.login.SignInActivity" />       
+        <activity 
+            android:name="com.meipinke.login.RegisterActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"/> 
+        <activity android:name="com.meipinke.cart.UnLoginEmptyCartActivity"/>
+        <activity android:name="com.meipinke.cart.UnLoginItemCartActivity"/>
+        <activity android:name="com.meipinke.cart.LoginEmptyCartActivity"/>
+        <activity android:name="com.meipinke.cart.LoginItemCartActivity"/>
+        <activity android:name="com.meipinke.wish.UnLoginWishListActivity"/>     
+        <activity android:name="com.meipinke.wish.LoginWishListActivity"/>
+        <activity android:name="com.meipinke.cart.CartEditActivity"/>
+        <activity android:name="com.meipinke.wish.WishEditActivity"/>
+        <activity 
+            android:name="com.meipinke.cart.CheckoutActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name="com.meipinke.cart.CheckoutPlaceOrderActivity"/>
+    </application>
+    
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>   
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+
+</manifest>

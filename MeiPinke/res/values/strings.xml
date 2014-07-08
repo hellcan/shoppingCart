@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MeiPinke</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="cloth">Clothing</string>
+    <string name="home">Home/Garden</string>
+    <string name="desktop">Desktop</string>
+    <string name="Laptop">Laptops/Notebooks</string>
+    <string name="whatches">Watches/Accessory</string>
+    <string name="beauty">Beauty</string>
+    <string name="handbags">Handbags</string>
+    <string name="phone">Phones/PDAs</string>
+    <string name="sports">Sports</string>
+    <string name="cart_1">Your cart is empty</string>
+    <string name="cart_2">Sign in to view items that you added to your Cart</string>
+    <string name="cart_3">Add items to your Cart as you shop</string>
+    <string name="wish_2">Sign in to view items that you saved to your Wish List</string>
+    <string name="cart_signin">Sign In</string>
+    <string name="input_account_hint">Email Address</string>
+    <string name="input_password_hint">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Create an Account</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>    
+    <string name="zip">Zip</string>
+    <string name="submit">Submit</string>
+    <string name="member">Member Log In</string>
+    <string name="cart_info">Does not include any applicable shipping charges, sales tax or any optional gift charges</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="cart_price">$88888</string>     
+    <string name="checkout">Checkout</string>        
+    <string name="qty">Qty: 1</string>   
+    <string name="item_name">Kate Spade New York Solar Printed Harmony Tote</string>
+    <string name="editcart">Edit Cart</string>
+    <string name="wish_status">No item available</string>
+    <string name="edit_info">Your subtotal will be updated when you save your cart</string>
+    <string name="remove">Remove</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+</resources>

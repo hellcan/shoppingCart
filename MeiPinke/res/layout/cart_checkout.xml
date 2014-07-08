@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView
+        android:id="@+id/chkout_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Payment"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+         />
+    
+        <TextView 
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/chkout_card"
+        android:background="@color/grey"/>
+        
+        <CheckBox 
+            android:id="@+id/chkout_select_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/line_1"
+            android:text="card number is 10065065065065"
+            />
+        
+        <Button
+            android:id="@+id/chkout_btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chkout_select_card"
+            android:background="@drawable/button_selector_cart_signin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="Select Another Card" />
+        
+        <TextView
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/chkout_btn_select"
+            android:layout_marginTop="15dp"
+            android:background="@color/grey_5" />
+        
+        <LinearLayout
+            android:id="@+id/chk_name_fielf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_2"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
+
+    <TextView 
+        android:id="@+id/chk_firstname" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/firstname" 
+        android:layout_marginLeft="15dp" 
+        android:textSize="13sp" />
+    
+    <EditText
+        android:id="@+id/chk_edt_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5.0px"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/edit_selector_login"
+        android:inputType="text"
+        android:maxLength="16"
+        android:paddingLeft="10.0sp"
+        android:saveEnabled="true"
+        android:layout_weight="1" />
+    </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
+    <TextView 
+        android:id="@+id/chk_lastname" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/lastname" 
+        android:layout_marginLeft="15dp" 
+        android:textSize="13sp"
+         />
+    
+    <EditText 
+        android:id="@+id/chk_edt_lastname" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="5.0px" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:layout_marginTop="5.0dip" 
+        android:background="@drawable/edit_selector_login" 
+        android:paddingLeft="10.0sp" 
+        android:inputType="text" 
+        android:maxLength="16" 
+        android:saveEnabled="true" />
+    </LinearLayout>
+    </LinearLayout>
+    
+        <LinearLayout 
+            android:id="@+id/chk_card_num_field"
+            android:layout_below="@+id/chk_name_fielf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+         <TextView 
+        android:id="@+id/reg_address" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Card Number" 
+        android:layout_marginLeft="15dp" 
+        android:textSize="13sp"
+         />
+    
+    <EditText 
+        android:id="@+id/chk_edt_card_number" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="5.0px" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:layout_marginTop="5.0dip" 
+        android:background="@drawable/edit_selector_login" 
+        android:paddingLeft="10.0sp" 
+        android:inputType="number" 
+        android:maxLength="16" 
+        android:saveEnabled="true" />
+    
+    </LinearLayout>    
+    
+        <LinearLayout 
+            android:id="@+id/chk_other_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk_card_num_field"
+            android:orientation="horizontal">
+    
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3">
+                
+                <TextView 
+        android:id="@+id/chk_exp" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Expiration" 
+        android:layout_marginLeft="15dp" 
+        android:textSize="13sp" />
+    
+    <EditText
+        android:id="@+id/chk_edt_exp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5.0px"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/edit_selector_login"
+        android:inputType="date"
+        android:maxLength="2"
+        android:hint="Month"
+        android:paddingLeft="10.0sp"
+        android:saveEnabled="true"
+        android:layout_weight="1" />
+                
+            </LinearLayout>
+            
+           
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:textSize="40dp"
+                android:text="/"/>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3">
+                
+                <TextView 
+        android:id="@+id/chk_date" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Date" 
+        android:layout_marginLeft="10dp" 
+        android:textSize="13sp" />
+    
+    <EditText
+        android:id="@+id/chk_edt_date"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5.0px"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/edit_selector_login"
+        android:inputType="number"
+        android:maxLength="4"
+        android:hint="Year"
+        android:paddingLeft="10.0sp"
+        android:saveEnabled="true"
+        android:layout_weight="1" />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3">
+                
+                <TextView 
+        android:id="@+id/chk_sec" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Security Code" 
+        android:layout_marginLeft="15dp" 
+        android:textSize="13sp" />
+    
+    <EditText
+        android:id="@+id/chk_edt_sec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5.0px"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/edit_selector_login"
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingLeft="10.0sp"
+        android:saveEnabled="true"
+        android:layout_weight="1" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/chk_other_field"
+            android:layout_marginTop="15dp"
+            android:background="@color/grey_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/line_3"
+            android:layout_alignParentBottom="true" >
+
+            <Button 
+                android:id="@+id/chkout_btn_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_signin"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:text="Continue"/>
+
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>
